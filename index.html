@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1RM 계산기</title>
+    <link rel="stylesheet" href="1rm.css">
+    <script src="1rm.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="wrap">
+            <h1>1RM 계산기</h1>
+            <p>운동 종류과 반복횟수, 무게를 입력하면 1RM부터 10RM까지 계산합니다.</p>
+
+            <select id="sport">
+                <option value="">종목선택</option>
+                <option value="squat">스쿼트</option>
+                <option value="benchpress">데드리프트</option>
+                <option value="deadlift">벤치프레스</option>
+            </select>
+            <select id="count">
+                <option value="">반복횟수(10회이하)</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <input id="weight" type="number" placeholder="무게(kg)">
+
+            <button id="result">계산하기</button>
+            <table id="resWrap">
+                <colgroup>
+                    <col style="width:40%">
+                    <col style="width:60%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>RM</th>
+                        <th>중량 (kg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
