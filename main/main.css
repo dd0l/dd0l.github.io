@@ -5,7 +5,7 @@
     100% {transform:translateX(-15px);}
 }
 @keyframes typing{
-    40%,60% {left:100%}
+    50% {left:100%}
     100% {left:0%;}
 }
 .main_bn {display:flex; justify-content:center; align-items:center; width:100vw; height:100vh; background:#03233e;}
@@ -13,7 +13,7 @@
 .main_txt .main_t_txt{display:inline-block; padding:10px 15px; margin-bottom:20px; color:#fff000; border:2px solid #fff000; border-radius:10px; font-size:18px;}
 .main_m_txt{margin-bottom:30px; font-size:120px;}
 .main_m_txt .typing {position:relative; display:inline-block; padding-left:10px; color:#fff000; overflow:hidden; vertical-align:bottom;}
-
+.main_m_txt .typing .typingResult {display:block; position:absolute; top:0; left:0; margin-left:10px; width:100%; height:100%; border-left:2px solid #fff000; background:#03233e;}
 .main_txt .wave{position:relative; margin:0 auto 30px; width:50%; max-width:320px; height:30px; overflow:hidden;}
 .main_txt .wave::before {content:'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'; position:absolute; top:-20px; left:0; font-size:2em; text-decoration-color:#fff000; text-decoration-style:wavy; text-decoration-line:underline; color:transparent; animation:wave-line 1s linear infinite;}
 .main_b_txt{font-size:18px;}
