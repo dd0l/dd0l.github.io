@@ -1,0 +1,16 @@
+/* GNB */
+#gnb {z-index:2; display:flex; align-items:center; position:fixed; top:0; left:0; padding:0 30px; width:100vw; height:70px; background: #03233e; border-bottom:1px solid #fff000;}
+#gnb .logo {display:block; padding:15px 0; margin-right:50px; width:120px; height:100%; color:#fff; font-size:18px; line-height:22px; text-align:center;}
+.gnb-list, .gnb-list li, .gnb-list a {display:flex; align-items:center; height:100%;}
+.gnb-list a {position:relative; padding: 0 20px; color:#ccc;}
+.gnb-list a:hover {color:#fff;}
+.gnb-list a:hover::before, .gnb-list a.on::before {content:''; display:block; position:absolute; bottom:0; left:50%; width:calc(100% - 40px); transform: translateX(-50%); height:3px;}
+.gnb-list a:hover::before {background:#ccc;}
+.gnb-list a.on {color:#fff;}
+.gnb-list a.on::before {background:#fff000;}
+
+/* LNB */
+#lnb {z-index:1; position:fixed; top:0; left:0; padding:70px 20px 0; width:200px; height:100vh; background:#03233e;}
+#lnb h2 {margin:20px auto; font-size:25px; color:#fff; text-align:center;}
+.lnb-list a {display:block; padding:5px 0; color:#ddd; font-size:15px;}
+.lnb-list a:hover {color:#fff000}
