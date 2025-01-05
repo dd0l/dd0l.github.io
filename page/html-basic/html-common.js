@@ -8,8 +8,8 @@ let navHtml =`
             <li><a href="whats-up-html.html">HTML 이란?</a></li>
             <li><a href="vscode-install.html">Visual Studio 설치방법</a></li>
             <li><a href="vscode-extends.html">Visual Studio 확장프로그램 추천</a></li>
-            <li><a href="#">< Tag > 종류</a></li>
-            <li><a href="#">< Tag > 사용법</a></li>
+            <li><a href="tag-type.html">Tag - 종류</a></li>
+            <li><a href="#">Tag - 블록, 인라인</a></li>
         </ul>
     `;
 
