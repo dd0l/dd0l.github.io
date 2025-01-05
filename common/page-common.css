@@ -1,3 +1,21 @@
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.2),
+      0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 4px 4px;
+    white-space: nowrap;
+}
+.a-link {color:#000fff;}
+.a-link:hover, .a-link:active {color:#000fff;}
+
 /* GNB */
 #gnb {z-index:2; display:flex; align-items:center; position:fixed; top:0; left:0; padding:0 30px; width:100vw; height:70px; background: #03233e; border-bottom:1px solid #fff000;}
 #gnb .logo {display:block; padding:15px 0; margin-right:50px; width:120px; height:100%; color:#fff; font-size:18px; line-height:22px; text-align:center;}
@@ -10,7 +28,24 @@
 .gnb-list a.on::before {background:#fff000;}
 
 /* LNB */
-#lnb {z-index:1; position:fixed; top:0; left:0; padding:70px 20px 0; width:200px; height:100vh; background:#03233e;}
+#lnb {z-index:1; position:fixed; top:0; left:0; padding:70px 20px 0; width:250px; height:100vh; background:#03233e;}
 #lnb h2 {margin:20px auto; font-size:25px; color:#fff; text-align:center;}
 .lnb-list a {display:block; padding:5px 0; color:#ddd; font-size:15px;}
+.lnb-list a.on {color:#fff000;}
 .lnb-list a:hover {color:#fff000}
+
+@keyframes widthFull {
+    0% {width:0;}
+    100% {width:100%;}
+}
+/* main */
+main {margin:70px 0 0 250px; padding:40px; min-height:calc(100vh - 70px); box-sizing:border-box;}
+.title {font-size:25px; }
+.title::after {content:''; display:block; margin-top:20px; height:3px; animation: widthFull 1s linear; background: #ddd;}
+
+.container {padding: 60px 0; font-size:16px; line-height:2; color:#222;}
+.title-img {display:block; margin:0 auto 60px; width:100%; max-width:400px;}
+.c-tit1 {padding:30px 0; font-size:20px; font-weight:700;}
+.c-img {width:100%; max-width:700px;}
+
+.container p {padding:10px 0 30px;}
